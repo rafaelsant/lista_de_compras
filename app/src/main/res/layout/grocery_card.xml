@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grocery_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/grocery_text"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.8"
+            android:gravity="center|start"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="24sp"
+            android:theme="@style/Theme.ListaDeCompras"
+            tools:text="teste" />
+
+        <CheckBox
+            android:id="@+id/grocery_check"
+            style="@style/Widget.Material3.CompoundButton.CheckBox"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:button="@android:drawable/checkbox_on_background"
+            android:buttonTint="#F8F8F8"
+            android:buttonTintMode="add"
+            android:checked="false"
+            android:gravity="center|end"
+            android:textAlignment="center" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
